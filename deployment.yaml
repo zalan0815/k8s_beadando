@@ -17,6 +17,8 @@ spec:
           image: ghcr.io/zalan0815/k8s_beadando-backend:1777015734
           ports:
             - containerPort: 3000
+      imagePullSecrets:
+        - name: ghcr-auth-secret
 
 ---
 
@@ -39,6 +41,8 @@ spec:
           image: ghcr.io/zalan0815/k8s_beadando-frontend:1777015734
           ports:
             - containerPort: 80
+      imagePullSecrets:
+        - name: ghcr-auth-secret
 
 ---
 
