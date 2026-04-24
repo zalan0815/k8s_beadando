@@ -28,7 +28,7 @@
 
       if (!year) return;
 
-      const res = await fetch(`api-k8s-beadando-tofalvizalan.jcloud.jedlik.cloud/oscar/${year}`);
+      const res = await fetch(`http://api-k8s-beadando-tofalvizalan.jcloud.jedlik.cloud/oscar/${year}`);
       const data = await res.json();
 
       if (data.error) {
