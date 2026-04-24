@@ -10,7 +10,8 @@ const oscars = {
   2021: "Nomadland",
   2022: "CODA",
   2023: "Everything Everywhere All at Once",
-  2024: "Oppenheimer"
+  2024: "Oppenheimer",
+  2025: "Anora"
 };
 
 app.get("/oscar/:year", (req, res) => {
