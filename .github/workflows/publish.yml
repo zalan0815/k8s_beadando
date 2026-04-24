@@ -52,3 +52,7 @@ jobs:
         git add deployment.yaml
         git commit -m "update k8s images" || echo "no changes"
         git push
+
+        mkdir -p ~/.kube
+        echo "${{ secrets.K8S_CONFIG_BASE64 }}" | base64 -d > ~/.kube/config
+        kubectl apply -f deployment.yaml
