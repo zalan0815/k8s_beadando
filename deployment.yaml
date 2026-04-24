@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: k8s-beadando-backend-container
-          image: ghcr.io/zalan0815/k8s_beadando-backend:1777015376
+          image: ghcr.io/zalan0815/k8s_beadando-backend:1777015734
           ports:
             - containerPort: 3000
 
@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
         - name: k8s-beadando-frontend-container
-          image: ghcr.io/zalan0815/k8s_beadando-frontend:1777015376
+          image: ghcr.io/zalan0815/k8s_beadando-frontend:1777015734
           ports:
             - containerPort: 80
 
