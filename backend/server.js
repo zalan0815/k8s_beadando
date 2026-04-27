@@ -6,6 +6,7 @@ app.use(cors());
 
 // Egyszerű "adatbázis"
 const oscars = {
+  2019: "Green Book",
   2020: "Parasite",
   2021: "Nomadland",
   2022: "CODA",
